@@ -1,0 +1,2402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Music</title>
+    <link rel="icon" href="logo.svg">
+
+     <!-- // STYLESHEET PAGE ADD  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dataImages.css">
+    <link rel="stylesheet" href="responsiveStyle.css">
+    <!-- // ALL ICONS CONNECT LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+     <!--// ALL GOOGLE FONTS LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        
+</head>
+
+<body>
+
+    <div id="main_img"></div>
+    
+    <nav class="navbar">
+
+        <ul class="menu">
+            <span class="material-symbols-outlined" id="menu_icon"> menu </span>
+        </ul>
+
+        <ul class="  ">
+            <i class="ti ti-menu-2  media_new_menu  none" id="menu_icon"></i>
+        </ul>
+       
+        <ul class="logo_container">
+            <img id="logo" src="logo.svg" alt="logo" >
+            <span >Music</span>
+        </ul>
+
+        <ul class="search_bar_container">
+            <div class="search_icon_div" >
+                <svg id="seach_icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                    <path d="M21 21l-6 -6" />
+                </svg>
+            </div>
+            <input type="text" class="search_bar" placeholder="Search, songs, albums, artists, podcasts">
+        </ul>
+
+        <ul class="cast_icon_container">
+            <span class="material-symbols-outlined" id="cast_icon"> cast </span>
+        </ul>
+
+        <div class="profile_icon_box">
+            <img id="profile_icon" src="./images/profilePhoto.png" alt=""> 
+            <div class="profile_dropdown">
+                <a href="signIn.html">Sign in</a>
+                <a href="signUp.html">Sign up</a>
+                <a href="">Help</a>
+                <a href="">Settings</a>
+                <a href="index.html">Log out</a>
+            </div>
+        </div>
+
+        <div class="sign_in_text"></div>
+
+    </nav>
+
+
+    <nav class="less_sidebar  none">
+        <div class="less_sidebar_content">
+
+            <div class="less_sidebar_home_box  less_common_box  flex_column">
+                <i class="ti ti-home-filled  less_common_icon" id="less_home_icon"></i>
+                <p class="less_sidebar_details">Home</p>
+            </div>
+
+            <div class="less_sidebar_explore_box  less_common_box  flex_column">
+                <i class="fa-regular fa-compass  less_common_icon" id="less_explore_icon"></i>
+                <p class="less_sidebar_details">Explore</p>
+            </div>
+
+            <div class="less_sidebar_library_box  less_common_box   flex_column">
+                <span class="material-symbols-outlined  less_common_icon" id="less_library_icon"> library_music </span>
+                <p class="less_sidebar_details">Library</p>
+            </div>
+
+        </div>
+    </nav>
+
+    
+    <nav class="more_sidebar">
+        <div class="more_sidebar_content">
+
+            <div class="more_home_box  more_common_sidebar">
+                <i class="ti ti-home-filled  more_sidebar_icon_common" id="more_home_icon"></i>
+                <p class="more_sidebar_details">Home</p>
+            </div>
+            <div class="more_explore_box  more_common_sidebar">
+                <i class="fa-regular fa-compass  more_sidebar_icon_common" id="explore_icon"></i>
+                <p class="more_sidebar_details">Explore</p>
+            </div>
+            <div class="more_library_box  more_common_sidebar">
+                <span class="material-symbols-outlined  more_sidebar_icon_common" id="library_icon"> library_music </span>
+                <p class="more_sidebar_details">Library</p>
+            </div>
+        
+        
+            <div class="divide_line">__________________</div>
+        
+            <div class="new_playlist  sidebar_common">
+                <span class="material-symbols-outlined" id="new_playlist_icon"> add </span>
+                <a href="">New Playlist</a>
+            </div>
+        
+        </div>
+    </nav>
+
+    
+    <main class="main" id="">
+
+        <div class="genre">
+            <div class="genre_box" > Romance </div>
+            <div class="genre_box" > Podcasts </div>
+            <div class="genre_box" > Party </div>
+            <div class="genre_box" > Relax </div>
+            <div class="genre_box" > Energise </div>
+            <div class="genre_box" > Commute </div>
+            <div class="genre_box" > Workout </div>
+            <div class="genre_box" > Sad </div>
+            <div class="genre_box" > Focus </div>
+        </div>
+        
+    </main>
+
+    <div class="main_2">
+
+        <div class="profile_controls">
+            <div>
+                <img id="profile_controls_img" src="./images/profilePhoto.png" alt="profile image">
+            </div>
+
+            <div class="profile_name">
+                <p class="main_sub_headings  page_profile_name"></p>
+                <p class="main_headings">Listen again</p>
+            </div>
+
+            <div class="more" id="more_design">More
+            </div>
+
+            <abbr title="Previous">
+                <div class="left_btn" id="left_design" onclick="scroll_Left_1()">
+                    <span class="material-symbols-outlined" id="left_icon"> chevron_left </span>
+                </div>
+            </abbr>
+            
+            <abbr title="Next">
+                <div class="right_btn" id="right_design" onclick="scroll_Right_1()">
+                    <span class="material-symbols-outlined" id="right_icon"> chevron_right </span>
+                </div>
+            </abbr>
+        </div>
+        
+        <br>
+        
+        <div class="recent_songs_list  scroll_1">
+            <div class="recent_songs_boxes  playing_songs_boxes" id="recent_song_box_1">
+                <div class="recent_songs_img_box">
+                    <img class="recent_song_img" src="" alt="1-image">
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon" id="1" ></i>
+                    </div>
+                    <div class="more_dropdown">
+                        <div class="more_dropdown_content">
+                            <div id="more_dropdown_div_1">
+                                <a href=""> 
+                                    <svg id="more_dropdown_1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-skip-forward"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" x2="19" y1="5" y2="19"/>
+                                    <p>Play next</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a href=""> 
+                                    <svg  id="more_dropdown_2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-list-video"><path d="M12 12H3"/><path d="M16 6H3"/><path d="M12 18H3"/><path d="m16 12 5 3-5 3v-6Z"/>
+                                    <p>Add to queue</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a href=""> 
+                                    <svg id="more_dropdown_3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-list-plus"><path d="M11 12H3"/><path d="M16 6H3"/><path d="M16 18H3"/><path d="M18 9v6"/><path d="M21 12h-6"/>
+                                    <p>Save to playlist</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a href=""> 
+                                    <svg id="more_dropdown_4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-thumbs-up"><path d="M7 10v12"/><path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"/>
+                                    <p>Add to liked songs</p>
+                                </a>
+                            </div>
+                            <div id="more_dropdown_div_5">
+                                <a href=""> 
+                                    <svg id="more_dropdown_5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/>
+                                    <p>Download</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <h5 class="song_name"> <br>
+                        <p class="song_artist"></p>
+                    </h5>
+                </div>
+            </div>
+            
+            <div class="recent_songs_boxes  playing_songs_boxes" id="recent_song_box_2">
+                <div class="recent_songs_img_box">
+                    <img class="recent_song_img" src="" alt="2-image">
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon" id="2" ></i>
+                    </div>
+                </div>    
+                <div class="recent_song_info">
+                    <h5 class="song_name"> <br>
+                        <p class="song_artist"></p>
+                    </h5>
+                </div>
+            </div>
+
+            <div class="recent_songs_boxes  playing_songs_boxes" id="recent_song_box_3">
+                <div class="recent_songs_img_box">
+                    <img class="recent_song_img" src="" alt="3-image">
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon" id="3" ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <h5 class="song_name"> <br>
+                        <p class="song_artist"></p>
+                    </h5>
+                </div>
+            </div>
+
+            <div class="recent_songs_boxes  playing_songs_boxes" id="recent_song_box_4">
+                <div class="recent_songs_img_box">
+                    <img class="recent_song_img" src="" alt="4-image">
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon" id="4" ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <h5 class="song_name"> <br>
+                        <p class="song_artist"></p>
+                    </h5>
+                </div>
+            </div>
+
+            <div class="recent_songs_boxes  playing_songs_boxes" id="recent_song_box_5">
+                <div class="recent_songs_img_box">
+                    <img class="recent_song_img" src="" alt="5-image">
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon" id="5" ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <h5 class="song_name"> <br>
+                        <p class="song_artist"></p>
+                    </h5>
+                </div>
+            </div>
+
+            <div class="recent_songs_boxes  playing_songs_boxes" id="recent_song_box_6">
+                <div class="recent_songs_img_box">
+                    <img class="recent_song_img" src="" alt="6-image">
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon" id="6" ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <h5 class="song_name"> <br>
+                        <p class="song_artist"></p>
+                    </h5>
+                </div>
+            </div>
+
+            <div class="recent_songs_boxes  playing_songs_boxes" id="recent_song_box_7">
+                <div class="recent_songs_img_box">
+                    <img class="recent_song_img" src="" alt="7-image">
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon" id="7" ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <h5 class="song_name"> <br>
+                        <p class="song_artist"></p>
+                    </h5>
+                </div>
+            </div>
+
+            <div class="recent_songs_boxes  playing_songs_boxes" id="recent_song_box_8">
+                <div class="recent_songs_img_box">
+                    <img class="recent_song_img" src="" alt="8-image">
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon" id="8" ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <h5 class="song_name"> <br>
+                        <p class="song_artist"></p>
+                    </h5>
+                </div>
+            </div>
+
+            <div class="recent_songs_boxes  playing_songs_boxes" id="recent_song_box_9">
+                <div class="recent_songs_img_box">
+                    <img class="recent_song_img" src=""  alt="9-image">
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon" id="9" ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <h5 class="song_name"> <br>
+                        <p class="song_artist"></p>
+                    </h5>
+                </div>
+            </div>
+
+            <div class="recent_songs_boxes  playing_songs_boxes" id="recent_song_box_10">
+                <div class="recent_songs_img_box">
+                    <img class="recent_song_img" src="" alt="10-image">
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon" id="10" ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <h5 class="song_name"> <br>
+                        <p class="song_artist"></p>
+                    </h5>
+                </div>
+            </div>
+
+            <div class="recent_songs_boxes  playing_songs_boxes" id="recent_song_box_11">
+                <div class="recent_songs_img_box">
+                    <img class="recent_song_img" src="" alt="11-image">
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon" id="11" ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <h5 class="song_name"> <br>
+                        <p class="song_artist"></p>
+                    </h5>
+                </div>
+            </div>
+
+            <div class="recent_songs_boxes  playing_songs_boxes" id="recent_song_box_12">
+                <div class="recent_songs_img_box">
+                    <img class="recent_song_img" src="" alt="12-image">
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon" id="12" ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <h5 class="song_name"> <br>
+                        <p class="song_artist"></p>
+                    </h5>
+                </div>
+            </div>
+
+            <div class="recent_songs_boxes  playing_songs_boxes" id="recent_song_box_13">
+                <div class="recent_songs_img_box">
+                    <img class="recent_song_img" src="" alt="13-image">
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon" id="13" ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <h5 class="song_name"> <br>
+                        <p class="song_artist"></p>
+                    </h5>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <div class="quick_picks_container">
+            <div class="profile_controls">
+                <div class="main_headings_box ">
+                    <p class="main_sub_headings">START RADIO BASED ON A SONG </p>
+                    <p class="main_headings"> Quick picks </p>
+                </div>
+
+                <div class="more">Play all </div>
+    
+                <abbr title="Previous">
+                    <div class="left_btn" onclick="scroll_Left_2()">
+                        <span class="material-symbols-outlined" id="left_icon"> chevron_left </span>
+                    </div>
+                </abbr>
+                
+                <abbr title="Next">
+                    <div class="right_btn" onclick="scroll_Right_2()">
+                        <span class="material-symbols-outlined" id="right_icon"> chevron_right </span>
+                    </div>
+                </abbr>
+            </div>
+
+            <br>
+
+            <div class="big_grid_songs_container  scroll_2">
+                <div class="big_grid_songs_boxes" id="quick_picks_box_1">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_animal"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="quick_picks_info">
+                        <p class="song_name"> Haiwaan </p>
+                        <p class="song_artist">Ashim Kems...• ANIMAL </p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="big_grid_songs_boxes" id="quick_picks_box_2">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_rockstar"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="quick_picks_info">
+                        <p class="song_name">Nadaan Parinde</p>
+                        <p class="song_artist">A.R. Rahman & M... • ROCKSTAR</p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="big_grid_songs_boxes" id="quick_picks_box_3">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_rockstar"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="quick_picks_info">
+                        <p class="song_name">Haawa Haawa</p>
+                        <p class="song_artist">Mohit Chauhan • ROCKSTAR</p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="big_grid_songs_boxes" id="quick_picks_box_4">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_arjit"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="quick_picks_info">
+                        <p class="song_name">Phir Le Aya Dil</p>
+                        <p class="song_artist">Arijit Singh • Arjit Singh Colle...</p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="big_grid_songs_boxes" id="quick_picks_box_5">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_barfi"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="quick_picks_info">
+                        <p class="song_name">Kyon</p>
+                        <p class="song_artist">Pritam, Sunidhi • BARFI (Origi...</p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="big_grid_songs_boxes" id="quick_picks_box_6">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_dil-se"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="quick_picks_info">
+                        <p class="song_name">Chaiyya Chaiyya</p>
+                        <p class="song_artist">Sukhwinder • DIL SE (Origi...</p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="big_grid_songs_boxes" id="quick_picks_box_7">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_billo-rani"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="quick_picks_info">
+                        <p class="song_name">BILLO RANI</p>
+                        <p class="song_artist">Anand Raj Anand, Pritam... • GOAL</p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="big_grid_songs_boxes" id="quick_picks_box_8">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_sanam"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="quick_picks_info">
+                        <p class="song_name">HAI APNA DIL TO AAWARA</p>
+                        <p class="song_artist">SANAM • Hai Apna Dil To Awara</p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="big_grid_songs_boxes" id="quick_picks_box_9">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_andhadhun"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="quick_picks_info">
+                        <p class="song_name">Naina Da Kya Kasoor</p>
+                        <p class="song_artist">Amit Trivedi • Andhadhun</p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="big_grid_songs_boxes" id="quick_picks_box_10">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_senorita"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="quick_picks_info">
+                        <p class="song_name">Senorita</p>
+                        <p class="song_artist">Farhan Akhtar, ... • ZINDAGI NA...</p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="big_grid_songs_boxes" id="quick_picks_box_11">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_dil-se"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="quick_picks_info">
+                        <p class="song_name">Jiya Jale</p>
+                        <p class="song_artist">Lata Manges... • DIL SE (Orgina... </p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="big_grid_songs_boxes" id="quick_picks_box_12">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_yaariyan"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="quick_picks_info">
+                        <p class="song_name">Meri Maa</p>
+                        <p class="song_artist">Song • K.K.</p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="big_grid_songs_boxes" id="quick_picks_box_13">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_delhi-6"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="quick_picks_info">
+                        <p class="song_name">MASAKALI</p>
+                        <p class="song_artist">Mohit Chauh... • DELHI-6 (Origina...</p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            
+                <div class="big_grid_songs_boxes" id="quick_picks_box_14">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_tamasha"></div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="quick_picks_info">
+                        <p class="song_name">MATARGASHTI</p>
+                        <p class="song_artist">Song • Mohit Chauhan</p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            
+                <div class="big_grid_songs_boxes" id="quick_picks_box_15">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_senorita"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="quick_picks_info">
+                        <p class="song_name">Ik Junoon (Paint It Red)</p>
+                        <p class="song_artist">Song • Vishal Dadlani (Add...</p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            
+                <div class="big_grid_songs_boxes" id="quick_picks_box_16">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_rhtdm"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="quick_picks_info">
+                        <p class="song_name">Zara Zara</p>
+                        <p class="song_artist">Song • Bombay Jayashri</p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            
+                <div class="big_grid_songs_boxes" id="quick_picks_box_17">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_kedarnath"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="quick_picks_info">
+                        <p class="song_name">Qaafirana</p>
+                        <p class="song_artist">Arijit Singh... • Kedarnath (Origi....</p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            
+                <div class="big_grid_songs_boxes" id="quick_picks_box_18">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_murder-3"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="quick_picks_info">
+                        <p class="song_name">Teri Jhuki Nazar</p>
+                        <p class="song_artist">Pritam, Shafqat Amanat Ali • MURDER 3</p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            
+                <div class="big_grid_songs_boxes" id="quick_picks_box_19">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_rockstar"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="quick_picks_info">
+                        <p class="song_name">Kun Faya Kun</p>
+                        <p class="song_artist">A.R. Rahman, Javed Ali • ROCKSTAR</p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            
+                <div class="big_grid_songs_boxes" id="quick_picks_box_20">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_terre-naina"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="quick_picks_info">
+                        <p class="song_name">Sajdaa (From "My Name Is Kh...</p>
+                        <p class="song_artist">Shankar Ehsaa... • MY NAME IS...</p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            
+                <div class="big_grid_songs_boxes" id="quick_picks_box_21">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_murder-3"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="quick_picks_info">
+                        <p class="song_name">Hum Jee Lenge</p>
+                        <p class="song_artist">Roxen Band • MURDER 3</p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            
+                <div class="big_grid_songs_boxes" id="quick_picks_box_22">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_kedarnath"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="quick_picks_info">
+                        <p class="song_name">Sweetheart</p>
+                        <p class="song_artist">Amit Trivedi • KEDARNATH</p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            
+                <div class="big_grid_songs_boxes" id="quick_picks_box_23">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_rhtdm"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="quick_picks_info">
+                        <p class="song_name">Such Keh Raha Hai</p>
+                        <p class="song_artist">K. K. • Rehnaa Hai Terre Dil</p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            
+                <div class="big_grid_songs_boxes" id="quick_picks_box_24">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_kedarnath"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="quick_picks_info">
+                        <p class="song_name">Namo Namo</p>
+                        <p class="song_artist">Amit Trivedi • Kedarnath (Orig...</p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>  
+        </div>
+
+        
+        <div class="profile_controls">
+            <p class="main_headings">Recommended albums</p>
+            <abbr title="Previous">
+                <div class="left_btn" onclick="scroll_Left_3()">
+                    <span class="material-symbols-outlined" id="left_icon"> chevron_left </span>
+                </div>
+            </abbr>
+            
+            <abbr title="Next">
+                <div class="right_btn" onclick="scroll_Right_3()">
+                    <span class="material-symbols-outlined" id="right_icon"> chevron_right </span>
+                </div>
+            </abbr>
+        </div>
+        
+        <br>
+
+        <div class="recent_songs_list  scroll_3">
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="img_rockstar"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon"  ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">Rockstar</p>
+                    <p class="song_artist">Album • A.R. Rahman</p>
+                </div>
+            </div>
+      
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="img_senorita"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon"  ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">Zindagi Na Milegi Dobara</p>
+                    <p class="song_artist">Album • Shankar Ehsaan Loy</p>
+                </div>
+            </div>
+ 
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="img_dirty-picture"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon"  ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">The Dirty Picture</p>
+                    <p class="song_artist">Album •  Vishal-Shekhar</p>
+                </div>
+            </div>
+   
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="img_hind-ke-sitare"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon"  ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">Panchayat</p>
+                    <p class="song_artist">Album • Manoj Tiwari</p>
+                </div>
+            </div>
+     
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="img_rhtdm"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon"  ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">Rehnaa Hai Terre Dil Mein</p>
+                    <p class="song_artist">Album • Harris Jayaraj</p>
+                </div>
+            </div>
+       
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="img_barfi"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon"  ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">Barfi</p>
+                    <p class="song_artist">Album • Pritam</p>
+                </div>
+            </div>
+   
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="img_raa-one"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon"  ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">Ra-One</p>
+                    <p class="song_artist">Album • Vishal Shekhar</p>
+                </div>
+            </div>
+       
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="img_animal"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon"  ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">Animal</p>
+                    <p class="song_artist">Album • Various Artist</p>
+                </div>
+            </div>
+       
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="img_yoyo"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon"  ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">Desi Kalakaar</p>
+                    <p class="song_artist">Album • Yo Yo Honey Singh</p>
+                </div>
+            </div>
+   
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="img_andhadhun"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon"  ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">Andhadhun</p>
+                    <p class="song_artist">Album • Amit Trivedi, Raftaar...</p>
+                </div>
+            </div>
+    
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="img_my-khan"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon"  ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">My Name Is Khan</p>
+                    <p class="song_artist">Album • Shankar Ehsaan Loy</p>
+                </div>
+            </div>
+
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="img_kabir-singh"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon"  ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">Kabir Singh</p>
+                    <p class="song_artist">Album • Varios Artists</p>
+                </div>
+            </div>
+
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="img_veer-zara"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon"  ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">Veer Zaara</p>
+                    <p class="song_artist">Album • Various Artists</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="profile_controls">
+            <p class="main_headings all_time_hits"> All Time Hits </p>
+            <abbr title="Previous">
+                <div class="allTime_left" onclick="scroll_Left_4()">
+                    <span class="material-symbols-outlined" id="left_icon  allTime_left"> chevron_left </span>
+                </div>
+            </abbr>
+            
+            <abbr title="Next">
+                <div class="allTime_right" onclick="scroll_Right_4()">
+                    <span class="material-symbols-outlined" id="right_icon  "> chevron_right </span>
+                </div>
+            </abbr>
+        </div>
+
+        <br>
+
+        <div class="recent_songs_list  scroll_4">
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="img_1"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon"  ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">Iconic Bollywood Hits</p>
+                    <p class="song_artist">Pritam, KK, Shreya Ghoshal, Shankar...</p>
+                </div>
+            </div>
+      
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="img_2"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon"  ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">Zindagi Na Milegi Dobara</p>
+                    <p class="song_artist">Album • Shankar Ehsaan Loy</p>
+                </div>
+            </div>
+ 
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="img_3"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon"  ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">Bollywood Romance Hitlist</p>
+                    <p class="song_artist">Arijit Singh, Shreya Ghoshal, Vishal...</p>
+                </div>
+            </div>
+   
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="img_4"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon"  ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">Presenting Alia Bhatt</p>
+                    <p class="song_artist">Alia Bhatt, Arijit Singh, Pritam</p>
+                </div>
+            </div>
+     
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="img_5"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon"  ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">90s Bollywood Sad Songs</p>
+                    <p class="song_artist">Kumar Sanu, Kajol, Shah Rukh Khan...</p>
+                </div>
+            </div>
+       
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="img_6"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon"  ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">Presenting Sukhwinder Singh</p>
+                    <p class="song_artist">Sukhwinder Singh, A.R. Rahman,...</p>
+                </div>
+            </div>
+   
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="img_7"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon"  ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">Bollywood Folk</p>
+                    <p class="song_artist">A.R. Rahman, Neha Kakkar, Darshan...</p>
+                </div>
+            </div>
+       
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="img_8"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon"  ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">Bollywood Retro Essentials</p>
+                    <p class="song_artist">Kishore Kumar, Lata Mangeshkar, R. D....</p>
+                </div>
+            </div>
+       
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="img_9"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon"  ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">Bollywood Fire</p>
+                    <p class="song_artist">Neha Kakkar, Tanishk Bagchi...</p>
+                </div>
+            </div>
+   
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="img_10"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon"  ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">Desi Pop Party</p>
+                    <p class="song_artist">Badshah, Yo Yo Honey Singh, Kara...</p>
+                </div>
+            </div>
+    
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="img_dirty-picture"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon"  ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">Bollywood Hitlist</p>
+                    <p class="song_artist">Arijit Singh, Shreya Ghoshal, Amitabh...</p>
+                </div>
+            </div>
+
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="img_kabir-singh"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon"  ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">Kabir Singh</p>
+                    <p class="song_artist">Album • Varios Artists</p>
+                </div>
+            </div>
+
+            <div class="recent_songs_boxes" >
+                <div class="recent_songs_img_box">
+                    <div class="recent_song_img" id="veer-zara"> </div>
+                    <div class="more_icon_box">
+                        <abbr title="more">
+                            <span class="material-symbols-rounded" id="more_icon"> more_vert </span>
+                        </abbr>
+                    </div>
+                    <div class="recent_play_icon_box  recent_play_flex" >
+                        <div class="recent_play_icon_load   recent_play_flex"></div>
+                        <i class="fa-solid fa-play  recent_play_icon" id="veer-zara" ></i>
+                    </div>
+                </div>
+                <div class="recent_song_info">
+                    <p class="song_name">Veer Zaara</p>
+                    <p class="song_artist">Album • Various Artists</p>
+                </div>
+            </div>
+        </div>
+
+
+
+         <div class="quick_picks_container">
+            <div class="profile_controls">
+                <div class="main_headings_box ">
+                    <p class="main_sub_headings"> FOR YOU </p>
+                    <p class="main_headings"> Trending songs </p>
+                </div>
+
+                <div class="more">Play all
+                </div>
+    
+                <abbr title="Previous">
+                    <div class="left_btn" onclick="scroll_Left_5()">
+                        <span class="material-symbols-outlined" id="left_icon"> chevron_left </span>
+                    </div>
+                </abbr>
+                
+                <abbr title="Next">
+                    <div class="right_btn" onclick="scroll_Right_5()">
+                        <span class="material-symbols-outlined" id="right_icon"> chevron_right </span>
+                    </div>
+                </abbr>
+             </div>  
+
+            <br>
+
+            <div class="big_grid_songs_container  scroll_5">
+                <div class="big_grid_songs_boxes" id="big_grid_songs_box_1">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_animal"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="big_grid_songs_info">
+                        <p class="song_name"> Haiwaan </p>
+                        <p class="song_artist">Ashim Kems...• ANIMAL </p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="big_grid_songs_boxes" id="big_grid_songs_box_2">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_kabir-singh"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="big_grid_songs_info">
+                        <p class="song_name"> Kaise Hua </p>
+                        <p class="song_artist">Song • Vishal Mishra • KABIR SINGH </p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="big_grid_songs_boxes" id="big_grid_songs_box_3">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_arjit"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="big_grid_songs_info">
+                        <p class="song_name"> Phir Le Aya Dil </p>
+                        <p class="song_artist"> Arijit Singh • Arjit Singh Colle... </p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="big_grid_songs_boxes" id="big_grid_songs_box_4">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_senorita"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="big_grid_songs_info">
+                        <p class="song_name"> Senorita </p>
+                        <p class="song_artist"> Farhan Akhtar, ... • ZINDAGI NA... </p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="big_grid_songs_boxes" id="big_grid_songs_box_5">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_animal"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="big_grid_songs_info">
+                        <p class="song_name"> Haiwaan </p>
+                        <p class="song_artist">Ashim Kems...• ANIMAL </p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="big_grid_songs_boxes" id="big_grid_songs_box_6">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_animal"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="big_grid_songs_info">
+                        <p class="song_name"> Haiwaan </p>
+                        <p class="song_artist">Ashim Kems...• ANIMAL </p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="big_grid_songs_boxes" id="big_grid_songs_box_7">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_kedarnath"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="big_grid_songs_info">
+                        <p class="song_name"> Qaafirana </p>
+                        <p class="song_artist"> Arijit Singh... • Kedarnath (Origi....</p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="big_grid_songs_boxes" id="big_grid_songs_box_8">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_hind-ke-sitare"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="big_grid_songs_info">
+                        <p class="song_name"> Raja Ji (Insta Mix) </p>
+                        <p class="song_artist">Anurag Saiki...• Panchayat </p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="big_grid_songs_boxes" id="big_grid_songs_box_9">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_animal"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="big_grid_songs_info">
+                        <p class="song_name"> Teri Jhuki Nazar (Film Versi... </p>
+                        <p class="song_artist">Shafqat Ama...• Murder 3 </p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="big_grid_songs_boxes" id="big_grid_songs_box_10">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_rockstar"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="big_grid_songs_info">
+                        <p class="song_name"> Saadda Haq </p>
+                        <p class="song_artist"> Mohit Chauhan • Rockstar </p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <div class="like_box">
+                                    <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                                </div>
+                                <div class="unlike_box">
+                                    <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                                </div>
+                                <div class="more_box">
+                                    <abbr title="more">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                    </abbr>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="big_grid_songs_boxes" id="big_grid_songs_box_11">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_animal"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="big_grid_songs_info">
+                        <p class="song_name"> Haiwaan </p>
+                        <p class="song_artist">Ashim Kems...• ANIMAL </p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="big_grid_songs_boxes" id="big_grid_songs_box_12">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_rhtdm"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="big_grid_songs_info">
+                        <p class="song_name"> Haiwaan </p>
+                        <p class="song_artist">Ashim Kems...• ANIMAL </p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="big_grid_songs_boxes" id="big_grid_songs_box_13">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_delhi-6"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="big_grid_songs_info">
+                        <p class="song_name"> Haiwaan </p>
+                        <p class="song_artist">Ashim Kems...• ANIMAL </p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="big_grid_songs_boxes" id="big_grid_songs_box_14">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_animal"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="big_grid_songs_info">
+                        <p class="song_name"> Pehle Bhi Main </p>
+                        <p class="song_artist">Ashim Kems...• ANIMAL </p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="big_grid_songs_boxes" id="big_grid_songs_box_15">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_rhtdm"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="big_grid_songs_info">
+                        <p class="song_name"> Haiwaan </p>
+                        <p class="song_artist">Ashim Kems...• ANIMAL </p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="big_grid_songs_boxes" id="big_grid_songs_box_16">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_rockstar"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="big_grid_songs_info">
+                        <p class="song_name"> Haiwaan </p>
+                        <p class="song_artist">Ashim Kems...• ANIMAL </p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="big_grid_songs_boxes" id="big_grid_songs_box_17">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_raa-one"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="big_grid_songs_info">
+                        <p class="song_name"> Haiwaan </p>
+                        <p class="song_artist">Ashim Kems...• ANIMAL </p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="big_grid_songs_boxes" id="big_grid_songs_box_18">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_animal"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="big_grid_songs_info">
+                        <p class="song_name"> Haiwaan </p>
+                        <p class="song_artist">Ashim Kems...• ANIMAL </p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="big_grid_songs_boxes" id="big_grid_songs_box_19">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_my-khan"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="big_grid_songs_info">
+                        <p class="song_name"> Haiwaan </p>
+                        <p class="song_artist">Ashim Kems...• ANIMAL </p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="big_grid_songs_boxes" id="big_grid_songs_box_20">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_teri-deewanni"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="big_grid_songs_info">
+                        <p class="song_name"> Haiwaan </p>
+                        <p class="song_artist">Ashim Kems...• ANIMAL </p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="big_grid_songs_boxes" id="big_grid_songs_box_21">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_barfi"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="big_grid_songs_info">
+                        <p class="song_name"> Haiwaan </p>
+                        <p class="song_artist">Ashim Kems...• ANIMAL </p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="big_grid_songs_boxes" id="big_grid_songs_box_22">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_ar-rahman"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="big_grid_songs_info">
+                        <p class="song_name"> Haiwaan </p>
+                        <p class="song_artist">Ashim Kems...• ANIMAL </p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="big_grid_songs_boxes" id="big_grid_songs_box_23">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_animal"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="big_grid_songs_info">
+                        <p class="song_name"> Haiwaan </p>
+                        <p class="song_artist">Ashim Kems...• ANIMAL </p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="big_grid_songs_boxes" id="big_grid_songs_box_24">
+                    <div class="big_grid_songs_img_box">
+                        <div class="quick_picks_img" id="img_animal"> </div>
+                        <div class="small_pause_icon_box">
+                            <i class="fa-solid fa-play  small_pause_icon"></i>
+                        </div>
+                    </div>
+                    <div class="big_grid_songs_info">
+                        <p class="song_name"> Haiwaan </p>
+                        <p class="song_artist">Ashim Kems...• ANIMAL </p>
+                        <div class="more_like_unlike_container">
+                            <div class="like_box">
+                                <span class="material-symbols-outlined" id="like_icon"> thumb_up </span>
+                            </div>
+                            <div class="unlike_box">
+                                <span class="material-symbols-outlined" id="unlike_icon"> thumb_down </span>
+                            </div>
+                            <div class="more_box">
+                                <abbr title="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                </abbr>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+            </div>
+
+        </div>  
+
+        
+    </div>
+
+
+
+    <footer class="music_player_container">
+
+        <div class="seek_slider_container" title="Seek Slider">
+            <div class="seekbar_primary  zoom_seekbar"></div>
+            <div class="seekbar_secondary  zoom_seekbar"></div>
+            <div class="handle_seek  dot"></div>
+        </div>
+
+        <div class="next_previous_play">
+
+            <div class="master_playbar">
+                <div title="Previous" class="skip_previous_song_box">
+                    <span class="material-icons" id="skip_previous_icon"> skip_previous </span>  
+                </div>
+            </div>
+    
+            <div class="master_playbar">
+                <div class="play_footer_song_box">
+                    <i class="fa-solid fa-pause" title="Pause" id="master_play_icon"></i>               
+                </div>
+            </div>
+    
+            <div class="master_playbar">
+                <div title="Next" class="skip_next_song_box">
+                    <span class="material-icons" id="skip_next_icon"> skip_next </span>   
+                </div>
+            </div>
+
+        </div>
+
+        <span class="song_playing_time">
+            <p class="song_playing_time_current"> 0:00 </p> /
+            <p class="song_playing_time_total"> 0:00 </p>
+        </span>
+
+        <div class="song_playing_container">
+            <div class="song_img_box"> 
+                <img id="song_img" height="45px" width="45px" src="" alt="song" style="border-radius: 5px;"> 
+            </div>
+            <div class="song_info_box">
+                <h5 class="song_playing_name"> <br>
+                    <p class="song_playing_artist"></p>
+                </h5>
+            </div>
+        </div>
+
+        
+        <div class="footer_like_unlike_container">
+
+            <div class="like_box">
+                <span title="Like" class="material-icons-outlined" id="like_icon"> thumb_up </span>
+            </div>
+
+            <div class="unlike_box">
+                <span title="I Dislike This" class="material-icons-outlined" id="unlike_icon"> thumb_down </span>
+            </div>
+
+            <div class="more_box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical  more_icon"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+            </div>
+
+        </div>
+
+
+        <div class="footer_more_function">
+
+            <div class="volume_slider_box">
+                <input type="range" min="0" max="100" value="80" class="volume_slider" id="slider">
+                <span>
+                    <p class="volume_value">80%</p>
+                </span>
+                <div class="vol_icon_box">
+                    <i title="Mute" class="fa-solid fa-volume-high" id="adjust_volume_icon"></i>
+                </div>          
+            </div>
+            
+            <div title="Repeat" class="repeat_icon_box">
+                <i class="ti ti-repeat" id="repeat_icon"></i>
+            </div>
+
+            <div title="Shuffle" class="shuffle_icon_box">
+                <i class="ti ti-arrows-shuffle" id="shuffle_icon"></i>
+            </div>
+
+        </div>
+
+        
+
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

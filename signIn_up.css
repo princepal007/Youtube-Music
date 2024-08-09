@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(65, 120, 229);
+}
+
+.sign_in_container {
+    width: 400px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgba(3, 36, 73, 0.479);
+}
+
+.heading {
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.email {
+    width: 320px;
+    height: 40px;
+    margin: 15px 15px 15px 15px;
+    border: 0.9px solid rgb(137, 130, 130);
+    color: rgb(137, 130, 130);
+    font-weight: 500;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+}
+.password {
+    width: 320px;
+    height: 40px;
+    margin: 15px 15px 25px 15px;
+    border: 0.9px solid rgb(137, 130, 130);
+    color: rgb(137, 130, 130);
+    font-weight: 500;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+}
+p a {
+    text-decoration: none;
+    color: rgb(21, 140, 208);
+    font-weight: 600;
+    font-size: 14px;
+    display: inline;
+}
+p a:hover {
+    color: rgb(128, 193, 230);
+}
+#signIn_eye {
+    position: absolute;
+    top: 333px;
+    right: 570px;
+    color: rgb(137, 130, 130);
+    cursor: pointer;
+}
+p a:active {
+    color: rgb(52, 131, 178);
+} 
+.errorMsg {
+    color: red;
+    font-weight: 500;
+}
+
+form button {
+    background-color: rgb(65, 120, 229);
+    color: white;
+    border: none;
+    width: 330px;
+    height: 40px;
+    margin: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: rgb(97, 126, 186);
+}
+form button:active {
+    background-color: rgb(63, 122, 240);
+}
+.sign_up {
+    position: absolute;
+    bottom: 210px;
+}
+
+/* ////////////////////////////////  SIGN UP PAGE */
+
+.main_container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 70px;
+}
+
+.sign_up_container {
+    width: 400px;
+    height: 73%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgba(3, 36, 73, 0.479);
+}
+.user_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.username_box {
+    display: flex;
+}
+.first_name {
+    width: 150px;
+    height: 40px;
+    margin: 12px 5px 12px 16px;
+    border: 0.9px solid rgb(137, 130, 130);
+    color: rgb(137, 130, 130);
+    font-weight: 500;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+}
+.last_name {
+    display: inline;
+    width: 150px;
+    height: 40px;
+    margin: 12px 16px 12px 5px;
+    border: 0.9px solid rgb(137, 130, 130);
+    color: rgb(137, 130, 130);
+    font-weight: 500;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+}
+#signUp_confirm_password {
+    width: 320px;
+    height: 40px;
+    margin: 3px 15px 25px 15px;
+    border: 0.9px solid rgb(137, 130, 130);
+    color: rgb(137, 130, 130);
+    font-weight: 500;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+}
+#signUp_eye {
+    position: absolute;
+    top: 350px;
+    right: 570px;
+    color: rgb(137, 130, 130);
+    cursor: pointer;
+}
+
+.login {
+    margin-bottom: 5px;
+}
+
+.error_msg{
+    color: red;
+    font-size: 17px;
+    font-weight: 550;
+    margin-top: 8px;
+    padding: 0px 5px 0px 5px;
+    box-shadow: inset 0pc 0px 5px 0px rgb(252, 111, 111);
+}
+
+

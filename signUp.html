@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP PAGE</title>
+    <link rel="stylesheet" href="signIn_up.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main_container">
+            <div class="sign_up_container">
+            <p class="heading">Sign Up</p>
+            <form class="signUp_form">
+                <div class="username_box">
+                    <input type="text" class="first_name" id="signUp_first_name" placeholder="First Name">
+                    <input type="text" class="last_name" id="signUp_last_name" placeholder="Last Name">
+                </div>
+                <input type="text" class="email" id="signUp_email" placeholder="Email">
+                <input type="password" class="password" id="signUp_password" placeholder="Password">
+                <i class="fa-regular fa-eye-slash  eye_icon" id="signUp_eye"></i>
+                <input type="text" class="password" id="signUp_confirm_password" placeholder="Confirm Password">
+                <p class="Policy_box">
+                    <input type="checkbox" id="check_policy"> I accept the <a href="">Terms of Use & Privacy Policy</a> 
+                </p>
+                <button class="sign_up_btn" type="submit">Sign Up</button>
+            </form>
+            <p class="login  link">Already have a account? <a href="signIn.html">Login here</a></p>
+            <p class="error_msg"></p>        
+        </div>
+    </div>
+
+    <script src="signUp.js"></script>
+</body>
+</html>

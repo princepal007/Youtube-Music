@@ -1,0 +1,244 @@
+/* /////////////  ALL MEEDIA QUERIES /////////////////////////////////////// */
+
+@media (max-width: 700px) {
+
+    html, body {
+        width: 100%;
+    }
+
+    /* ////////////////// NAVBAR SECTION /////////////////////// */
+    .navbar {
+        position: fixed;
+        top: 0;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .media_new_menu {
+        display: block;
+        position: relative;
+        left: 20px;
+    }
+
+    .logo_container {
+        left: 65px;
+        top: 15px;
+    }
+
+    .search_bar_container {
+        display: none;
+    }
+
+    #cast_icon {
+        right: 85px;
+    }
+
+    .profile_icon_box {
+        position: relative;
+        left: 95px;
+    }
+    .sign_in_text {
+        display: none;
+    }
+    .profile_dropdown {
+        right: 110px;
+        top: 45px;
+    }
+
+    /* ////////////////// BACKGROUND IMAGE & GENRE SECTION /////////////////////// */
+    #main_img {
+        display: none;
+    }
+
+    .genre {
+        width: 94%;
+        overflow-y: scroll;
+    }
+
+    .genre div {
+        height: 30%;
+        padding: 0 10px 0 10px;
+    }
+
+    /* ////////////////// SIDEBAR SECTION /////////////////////// */
+    .less_sidebar {
+        display: none;
+    }
+
+    .more_sidebar {
+        width: 56vw;
+        display: none;
+        transition: transform 200ms ease-in;
+        transform: translateX(-100%);
+    }
+    .more_sidebar_transtaleX {
+        transform: translateX(0%);
+    }
+    #more_home_icon {
+        margin-left: 24px;
+    }
+    
+
+    /* ////////////////// MAIN SECTION /////////////////////// */
+    .main {
+        min-width: 93vw;
+        position: absolute;
+        top: 60px;
+        left: 10px;
+    }
+    
+    .genre {
+        width: 100%; 
+        gap: 10px;
+        overflow-x: scroll;
+    }
+
+    .genre::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+
+    .main_2 {
+        width: 95vw;
+        position: relative;
+        top: 150px;
+        left: 10px;
+    }
+
+
+    #profile_controls_img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .main_sub_headings {
+        font-size: 0.8rem;
+    }
+
+    .main_headings {
+        font-size: 1.3rem;
+        display: inline;
+    }
+
+    .more {
+        display: none;
+    }
+
+    .left_btn {
+        left: 45px;
+    }
+
+    .right_btn {
+        left: 90px;
+    }
+
+    .allTime_left {
+        left: -10px;
+    }
+
+    .allTime_right {
+        left: 35px;
+    }
+
+    /* /////////// RECENT SONG SECTTION //////////////////// */
+    .recent_songs_list::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+
+    .recent_songs_list {
+        width: 100%;
+        overflow-x: scroll;
+        margin-bottom: 20px;
+    }
+    .more_icon_box {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .recent_song_img:hover {
+        opacity: 1;
+    } 
+
+    .recent_play_icon_box {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    
+    /* ////////////////// BIG GRID SECTION /////////////////////// */
+    .big_grid_songs_container {
+        width: 100%;
+        overflow-x: scroll;
+        margin-bottom: 30px;
+    }
+
+    .big_grid_songs_container::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+
+
+    .big_grid_songs_boxes:hover {
+        .quick_picks_img {
+            opacity: 1;
+        }
+        .small_pause_icon_box {
+            visibility: hidden;
+        }
+        .more_like_unlike_container {
+            visibility: hidden;
+        }
+    }
+
+
+    /* //////////////// MUSIC PLAYER SECTION ////////////////////// */
+    .seek_slider_container {
+        height: 15px;
+    }
+    .handle_seek {
+        top: 0;
+    }
+
+    .song_playing_container {
+        width: 70vw;
+        position: relative;
+        left: -45vw;
+    }
+
+    .song_info_box {
+        width: 50vw;
+        overflow: hidden;        
+    }
+    .song_name {
+        font-size: 14px;
+    }
+    .song_artist {
+        font-size: 13px;
+    }
+
+    .play_footer_song_box {
+        position: relative;
+        right: 1vw;
+    }
+    .play_footer_song_box:active, .play_footer_song_box:hover {
+        background-color: transparent;
+    }
+    #master_play_icon {
+        font-size: 25px;
+    }
+
+    .skip_next_song_box {
+        right: 10px;
+        top: 2px;
+    }
+
+    .next_previous_play {
+        width: 22%;
+        left: 85vw;
+    }
+
+    .song_playing_time, .skip_previous_song_box, .footer_like_unlike_container, .footer_more_function {
+        display: none;
+    }
+
+}
