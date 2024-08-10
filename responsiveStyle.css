@@ -5,6 +5,11 @@
     html, body {
         width: 100%;
     }
+    
+    /* //// to remove display of scrollbar ///// */
+    ::-webkit-scrollbar {
+        display: none;
+    } 
 
     /* ////////////////// NAVBAR SECTION /////////////////////// */
     .navbar {
@@ -95,10 +100,6 @@
         overflow-x: scroll;
     }
 
-    .genre::-webkit-scrollbar-thumb {
-        background-color: transparent;
-    }
-
     .main_2 {
         width: 95vw;
         position: relative;
@@ -142,9 +143,6 @@
     }
 
     /* /////////// RECENT SONG SECTTION //////////////////// */
-    .recent_songs_list::-webkit-scrollbar-thumb {
-        background-color: transparent;
-    }
 
     .recent_songs_list {
         width: 100%;
@@ -173,9 +171,6 @@
         margin-bottom: 30px;
     }
 
-    .big_grid_songs_container::-webkit-scrollbar-thumb {
-        background-color: transparent;
-    }
 
 
     .big_grid_songs_boxes:hover {
